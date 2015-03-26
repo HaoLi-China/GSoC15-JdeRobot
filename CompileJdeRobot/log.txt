@@ -1,0 +1,1312 @@
+hao@haopc:~/JdeRobot$ git clone https://github.com/RoboticsURJC/JdeRobot
+Cloning into 'JdeRobot'...
+remote: Counting objects: 11744, done.
+remote: Compressing objects: 100% (28/28), done.
+remote: Total 11744 (delta 7), reused 0 (delta 0), pack-reused 11716
+Receiving objects: 100% (11744/11744), 50.11 MiB | 359 KiB/s, done.
+Resolving deltas: 100% (7592/7592), done.
+
+
+
+
+
+
+hao@haopc:~/JdeRobot/JdeRobot$ mkdir build && cd build
+
+
+
+
+
+
+
+hao@haopc:~/JdeRobot/JdeRobot/build$ cmake ../
+-- The C compiler identification is GNU
+-- The CXX compiler identification is GNU
+-- Check for working C compiler: /usr/bin/gcc
+-- Check for working C compiler: /usr/bin/gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- checking for module 'gsl'
+--   found gsl, version 1.15
+-- checking for module 'eigen3'
+--   found eigen3, version 3.0.5
+/home/hao/JdeRobot/JdeRobot/src/stable/libs/colorspaces
+/home/hao/JdeRobot/JdeRobot/src/stable/libs/jderobotutil
+/home/hao/JdeRobot/JdeRobot/src/stable/libs/progeo
+/home/hao/JdeRobot/JdeRobot/src/stable/libs/pioneer
+/home/hao/JdeRobot/JdeRobot/src/stable/libs/fuzzylib
+/home/hao/JdeRobot/JdeRobot/src/stable/libs/visionlib
+/home/hao/JdeRobot/JdeRobot/src/stable/libs/parallelIce
+*** GAZEBO LIBRARIES FOUND
+*** Fireware ok
+-- checking for module 'eigen3'
+--   found eigen3, version 3.0.5
+-- Found eigen: /usr/include/eigen3 
+-- checking for module 'openni-dev'
+--   found openni-dev, version 1.3.2.1
+-- Found openni: /usr/lib/libOpenNI.so 
+-- Found libusb-1.0: /usr/include 
+-- checking for module 'flann'
+--   found flann, version 1.7.1
+-- Found Flann: /usr/lib/libflann_cpp_s.a 
+-- Found qhull: /usr/lib/libqhull.so 
+-- Found PCL_COMMON: /usr/local/lib/libpcl_common.so 
+-- Found PCL_OCTREE: /usr/local/lib/libpcl_octree.so 
+-- Found PCL_IO: /usr/local/lib/libpcl_io.so 
+-- Found PCL_KDTREE: /usr/local/lib/libpcl_kdtree.so 
+-- Found PCL_SEARCH: /usr/local/lib/libpcl_search.so 
+-- Found PCL_SAMPLE_CONSENSUS: /usr/local/lib/libpcl_sample_consensus.so 
+-- Found PCL_FILTERS: /usr/local/lib/libpcl_filters.so 
+-- Found PCL_GEOMETRY: /usr/local/include/pcl-1.7 
+-- Found PCL_FEATURES: /usr/local/lib/libpcl_features.so 
+-- Found PCL_SEGMENTATION: /usr/local/lib/libpcl_segmentation.so 
+-- Found PCL_SURFACE: /usr/local/lib/libpcl_surface.so 
+-- Found PCL_REGISTRATION: /usr/local/lib/libpcl_registration.so 
+-- Found PCL_RECOGNITION: /usr/local/lib/libpcl_recognition.so 
+-- Found PCL_KEYPOINTS: /usr/local/lib/libpcl_keypoints.so 
+-- Found PCL_VISUALIZATION: /usr/local/lib/libpcl_visualization.so 
+-- Found PCL_PEOPLE: /usr/local/lib/libpcl_people.so 
+-- Found PCL_OUTOFCORE: /usr/local/lib/libpcl_outofcore.so 
+-- Found PCL_TRACKING: /usr/local/lib/libpcl_tracking.so 
+-- OpenNi found at /usr/lib/libOpenNI.so
+-- Nite found at /usr/lib/libXnVNite_1_5_2.so
+*** Xerces ok
+/usr/local/include/libxml2
+*** ICE ok
+*** CWIID LIBRARIES NOT FOUND. Needed to wiimoteServer
+OpenCVHighGui was found in: /usr/local/include/opencv
+OpenCV was found in: /usr/local/include/opencv
+-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found X11: /usr/lib/x86_64-linux-gnu/libX11.so
+-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libGL.so 
+OpenGL libraries found at /usr/lib/x86_64-linux-gnu/libglut.so;/usr/lib/x86_64-linux-gnu/libXmu.so;/usr/lib/x86_64-linux-gnu/libXi.so
+-- OpenNI2 found at /usr/include/openni2
+-------------CMake will install local OpenNI2 lib and Driver
+NITE2 library not found
+-- Looking for include files CMAKE_HAVE_PTHREAD_H
+-- Looking for include files CMAKE_HAVE_PTHREAD_H - found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE 
+-- checking for module 'libxml++-2.6'
+--   found libxml++-2.6, version 2.34.1
+Libxml++ libraries found at /usr/local/lib
+*** LIBXML2 ok
+*** ALUT not found
+*** LIBTINYXML ok
+-- checking for module 'gtk+-2.0'
+--   found gtk+-2.0, version 2.24.10
+-- checking for module 'gtkgl-2.0'
+--   found gtkgl-2.0, version 2.0.1
+-- checking for module 'gtkmm-2.4'
+--   found gtkmm-2.4, version 2.24.2
+-- checking for module 'libglademm-2.4'
+--   found libglademm-2.4, version 2.6.7
+-- checking for module 'gthread-2.0'
+--   found gthread-2.0, version 2.32.4
+-- checking for module 'libgnomecanvas-2.0'
+--   found libgnomecanvas-2.0, version 2.30.3
+-- checking for module 'libgnomecanvasmm-2.6'
+--   found libgnomecanvasmm-2.6, version 2.26.0
+-- checking for module 'gtkglextmm-1.2'
+--   found gtkglextmm-1.2, version 1.2.0
+-- Looking for Q_WS_X11
+-- Looking for Q_WS_X11 - found
+-- Looking for Q_WS_WIN
+-- Looking for Q_WS_WIN - not found.
+-- Looking for Q_WS_QWS
+-- Looking for Q_WS_QWS - not found.
+-- Looking for Q_WS_MAC
+-- Looking for Q_WS_MAC - not found.
+-- Found Qt4: /usr/bin/qmake (found version "4.8.1")
+*** QT LIBRARIES Found LIBRARIES FOUND
+*** Goocanvasmm LIBRARIES NOT FOUND
+ kobuki_LIBRARIES 
+*** kobuki not found
+*** libusb FOUND
+-- Creating CPP interfaces
+-- Performing Test COMPILER_SUPPORTS_CXX11
+-- Performing Test COMPILER_SUPPORTS_CXX11 - Failed
+-- Performing Test COMPILER_SUPPORTS_CXX0X
+-- Performing Test COMPILER_SUPPORTS_CXX0X - Success
+version:
+-- Processing component icestorm
+-- Processing component introrob_qt
+-- Processing component namingService
+-- Processing component replayController
+-- Processing component kobuki_driver
+-- Processing component gazeboserver
+-- Processing plugin kinect
+-- Processing plugin pioneer
+-- Processing plugin nao
+-- Processing component introrob
+-- Processing component recorder
+-- Processing component giraffeClient
+-- Processing component basic_component
+-- Processing component opencvdemo
+-- Processing component rgbdCalibrator
+-- Processing component basic_component_qt
+-- Processing component openniServer
+-- Processing component teleoperator
+-- Processing component rgbdViewer
+-- Processing component cameraserver
+-- Processing component followBall
+-- Processing component naoviewer
+-- Processing component basic_server
+-- Processing component remoteConfiguration
+-- Processing component cameraview
+-- Processing component replayer
+-- Processing component naoserver
+-- Processing component visualHFSM
+-- Processing component giraffeServer
+-- Processing component colorTuner
+-- Processing component openni1Server
+-- Processing component cameraview_icestorm
+-- Processing component rgbdManualCalibrator
+-- Processing component pclRGBDServer
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/hao/JdeRobot/JdeRobot/build
+
+
+
+
+
+
+hao@haopc:~/JdeRobot/JdeRobot/build$ make
+[  0%] Generating encoders.cpp, encoders.h
+[  0%] Generating bodyencoders.cpp, bodyencoders.h
+[  1%] Generating genericData.cpp, genericData.h
+[  1%] Generating jcm.cpp, jcm.h
+[  1%] Generating pose3d.cpp, pose3d.h
+[  2%] Generating body.cpp, body.h
+[  2%] Generating wiimote.cpp, wiimote.h
+[  2%] Generating sonars.cpp, sonars.h
+[  3%] Generating containers.cpp, containers.h
+[  3%] Generating bodymotors.cpp, bodymotors.h
+[  3%] Generating kinectleds.cpp, kinectleds.h
+[  4%] Generating jointmotor.cpp, jointmotor.h
+[  4%] Generating naomotions.cpp, naomotions.h
+[  5%] Generating laser.cpp, laser.h
+[  5%] Generating image.cpp, image.h
+[  5%] Generating naofollowball.cpp, naofollowball.h
+[  6%] Generating varcolor.cpp, varcolor.h
+[  6%] Generating ptencoders.cpp, ptencoders.h
+[  6%] Generating common.cpp, common.h
+[  7%] Generating recorder.cpp, recorder.h
+[  7%] Generating pose3dencoders.cpp, pose3dencoders.h
+[  7%] Generating pose3dmotors.cpp, pose3dmotors.h
+[  8%] Generating replayControl.cpp, replayControl.h
+[  8%] Generating bodymovements.cpp, bodymovements.h
+[  8%] Generating namingService.cpp, namingService.h
+[  9%] Generating exceptions.cpp, exceptions.h
+[  9%] Generating motors.cpp, motors.h
+[  9%] Generating pointcloud.cpp, pointcloud.h
+[ 10%] Generating remoteCloud.cpp, remoteCloud.h
+[ 10%] Generating datetime.cpp, datetime.h
+[ 10%] Generating ptmotors.cpp, ptmotors.h
+[ 11%] Generating camera.cpp, camera.h
+[ 11%] Generating remoteConfig.cpp, remoteConfig.h
+Scanning dependencies of target JderobotInterfaces
+[ 11%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/bodyencoders.cpp.o
+[ 11%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/genericData.cpp.o
+[ 12%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/jcm.cpp.o
+[ 12%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/pose3d.cpp.o
+[ 12%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/body.cpp.o
+[ 13%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/wiimote.cpp.o
+[ 13%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/sonars.cpp.o
+[ 13%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/containers.cpp.o
+[ 14%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/bodymotors.cpp.o
+[ 14%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/kinectleds.cpp.o
+[ 14%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/jointmotor.cpp.o
+[ 15%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/naomotions.cpp.o
+[ 15%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/laser.cpp.o
+[ 15%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/image.cpp.o
+[ 16%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/naofollowball.cpp.o
+[ 16%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/varcolor.cpp.o
+[ 16%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/ptencoders.cpp.o
+[ 17%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/common.cpp.o
+[ 17%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/recorder.cpp.o
+[ 17%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/pose3dencoders.cpp.o
+[ 18%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/pose3dmotors.cpp.o
+[ 18%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/replayControl.cpp.o
+[ 19%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/bodymovements.cpp.o
+[ 19%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/namingService.cpp.o
+[ 19%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/exceptions.cpp.o
+[ 20%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/motors.cpp.o
+[ 20%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/pointcloud.cpp.o
+[ 20%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/remoteCloud.cpp.o
+[ 21%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/datetime.cpp.o
+[ 21%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/ptmotors.cpp.o
+[ 21%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/camera.cpp.o
+[ 22%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/remoteConfig.cpp.o
+[ 22%] Building CXX object ../src/stable/interfaces/cpp/jderobot/CMakeFiles/JderobotInterfaces.dir/encoders.cpp.o
+Linking CXX shared library libJderobotInterfaces.so
+[ 22%] Built target JderobotInterfaces
+Scanning dependencies of target jderobotutil
+[ 22%] Building CXX object ../src/stable/libs/jderobotutil/CMakeFiles/jderobotutil.dir/observer.cpp.o
+[ 22%] Building CXX object ../src/stable/libs/jderobotutil/CMakeFiles/jderobotutil.dir/paramdict.cpp.o
+[ 23%] Building CXX object ../src/stable/libs/jderobotutil/CMakeFiles/jderobotutil.dir/time.cpp.o
+Linking CXX static library libjderobotutil.a
+[ 23%] Built target jderobotutil
+Scanning dependencies of target jderobotutilshare
+[ 23%] Building CXX object ../src/stable/libs/jderobotutil/CMakeFiles/jderobotutilshare.dir/observer.cpp.o
+[ 23%] Building CXX object ../src/stable/libs/jderobotutil/CMakeFiles/jderobotutilshare.dir/paramdict.cpp.o
+[ 24%] Building CXX object ../src/stable/libs/jderobotutil/CMakeFiles/jderobotutilshare.dir/time.cpp.o
+Linking CXX shared library libjderobotutil.so
+[ 24%] Built target jderobotutilshare
+Scanning dependencies of target jderobotViewer
+[ 24%] Building CXX object ../src/stable/libs/jderobotViewer/CMakeFiles/jderobotViewer.dir/JderobotViewer.cpp.o
+Linking CXX static library libjderobotViewer.a
+[ 24%] Built target jderobotViewer
+Scanning dependencies of target jderobotViewerShare
+[ 25%] Building CXX object ../src/stable/libs/jderobotViewer/CMakeFiles/jderobotViewerShare.dir/JderobotViewer.cpp.o
+Linking CXX shared library libjderobotViewer.so
+[ 25%] Built target jderobotViewerShare
+Scanning dependencies of target xmlParser
+[ 25%] Building CXX object ../src/stable/libs/xmlParser/CMakeFiles/xmlParser.dir/xmlReaderParser.cpp.o
+[ 26%] Building CXX object ../src/stable/libs/xmlParser/CMakeFiles/xmlParser.dir/xmlWriterParser.cpp.o
+Linking CXX static library libxmlParser.a
+[ 26%] Built target xmlParser
+Scanning dependencies of target xmlParsershare
+[ 26%] Building CXX object ../src/stable/libs/xmlParser/CMakeFiles/xmlParsershare.dir/xmlReaderParser.cpp.o
+[ 27%] Building CXX object ../src/stable/libs/xmlParser/CMakeFiles/xmlParsershare.dir/xmlWriterParser.cpp.o
+Linking CXX shared library libxmlParser.so
+[ 27%] Built target xmlParsershare
+Scanning dependencies of target pioneer
+[ 28%] Building C object ../src/stable/libs/pioneer/CMakeFiles/pioneer.dir/pioneer.c.o
+cc1: warning: command line option ‘-Wno-invalid-offsetof’ is valid for C++/ObjC++ but not for C [enabled by default]
+Linking C static library libpioneer.a
+[ 28%] Built target pioneer
+Scanning dependencies of target pioneershare
+[ 28%] Building C object ../src/stable/libs/pioneer/CMakeFiles/pioneershare.dir/pioneer.c.o
+cc1: warning: command line option ‘-Wno-invalid-offsetof’ is valid for C++/ObjC++ but not for C [enabled by default]
+Linking C shared library libpioneer.so
+[ 28%] Built target pioneershare
+Scanning dependencies of target progeo
+[ 28%] Building C object ../src/stable/libs/progeo/CMakeFiles/progeo.dir/progeo.c.o
+cc1: warning: command line option ‘-Wno-invalid-offsetof’ is valid for C++/ObjC++ but not for C [enabled by default]
+/home/hao/JdeRobot/JdeRobot/src/stable/libs/progeo/progeo.c:581:6: warning: conflicting types for ‘update_camera_matrix’ [enabled by default]
+/home/hao/JdeRobot/JdeRobot/src/stable/libs/progeo/progeo.c:345:2: note: previous implicit declaration of ‘update_camera_matrix’ was here
+Linking C static library libprogeo.a
+[ 28%] Built target progeo
+Scanning dependencies of target progeoshare
+[ 28%] Building C object ../src/stable/libs/progeo/CMakeFiles/progeoshare.dir/progeo.c.o
+cc1: warning: command line option ‘-Wno-invalid-offsetof’ is valid for C++/ObjC++ but not for C [enabled by default]
+/home/hao/JdeRobot/JdeRobot/src/stable/libs/progeo/progeo.c:581:6: warning: conflicting types for ‘update_camera_matrix’ [enabled by default]
+/home/hao/JdeRobot/JdeRobot/src/stable/libs/progeo/progeo.c:345:2: note: previous implicit declaration of ‘update_camera_matrix’ was here
+Linking C shared library libprogeo.so
+[ 28%] Built target progeoshare
+Scanning dependencies of target logger
+[ 28%] Building CXX object ../src/stable/libs/log/CMakeFiles/logger.dir/Logger.cpp.o
+Linking CXX shared library liblogger.so
+[ 28%] Built target logger
+Scanning dependencies of target colorspacesmm
+[ 28%] Building CXX object ../src/stable/libs/visionlib/colorspaces/CMakeFiles/colorspacesmm.dir/imagecv.cpp.o
+Linking CXX static library libcolorspacesmm.a
+[ 28%] Built target colorspacesmm
+Scanning dependencies of target parallelIce
+[ 28%] Building CXX object ../src/stable/libs/parallelIce/CMakeFiles/parallelIce.dir/cameraClient.cpp.o
+[ 29%] Building CXX object ../src/stable/libs/parallelIce/CMakeFiles/parallelIce.dir/pointcloudClient.cpp.o
+[ 29%] Building CXX object ../src/stable/libs/parallelIce/CMakeFiles/parallelIce.dir/laserClient.cpp.o
+Linking CXX static library libparallelIce.a
+[ 29%] Built target parallelIce
+Scanning dependencies of target colorspacesmmshare
+[ 29%] Building CXX object ../src/stable/libs/visionlib/colorspaces/CMakeFiles/colorspacesmmshare.dir/imagecv.cpp.o
+Linking CXX shared library libcolorspacesmm.so
+[ 29%] Built target colorspacesmmshare
+Scanning dependencies of target parallelIceshare
+[ 29%] Building CXX object ../src/stable/libs/parallelIce/CMakeFiles/parallelIceshare.dir/cameraClient.cpp.o
+[ 30%] Building CXX object ../src/stable/libs/parallelIce/CMakeFiles/parallelIceshare.dir/pointcloudClient.cpp.o
+[ 30%] Building CXX object ../src/stable/libs/parallelIce/CMakeFiles/parallelIceshare.dir/laserClient.cpp.o
+Linking CXX shared library libparallelIce.so
+[ 30%] Built target parallelIceshare
+Scanning dependencies of target fuzzylib
+[ 30%] Building C object ../src/stable/libs/fuzzylib/CMakeFiles/fuzzylib.dir/fuzzylib.c.o
+cc1: warning: command line option ‘-Wno-invalid-offsetof’ is valid for C++/ObjC++ but not for C [enabled by default]
+Linking C static library libfuzzylib.a
+[ 30%] Built target fuzzylib
+Scanning dependencies of target fuzzyshare
+[ 31%] Building C object ../src/stable/libs/fuzzylib/CMakeFiles/fuzzyshare.dir/fuzzylib.c.o
+cc1: warning: command line option ‘-Wno-invalid-offsetof’ is valid for C++/ObjC++ but not for C [enabled by default]
+Linking C shared library libfuzzylib.so
+[ 31%] Built target fuzzyshare
+Scanning dependencies of target cvfast
+[ 31%] Building CXX object ../src/stable/libs/visionlib/cvFast/CMakeFiles/cvfast.dir/cvfast.cpp.o
+Linking CXX shared library libcvfast.so
+[ 31%] Built target cvfast
+Scanning dependencies of target imgAnalyze
+[ 31%] Building CXX object ../src/stable/libs/visionlib/imgAnalyze/CMakeFiles/imgAnalyze.dir/geometry.cpp.o
+[ 32%] Building CXX object ../src/stable/libs/visionlib/imgAnalyze/CMakeFiles/imgAnalyze.dir/image.cpp.o
+[ 32%] Building CXX object ../src/stable/libs/visionlib/imgAnalyze/CMakeFiles/imgAnalyze.dir/linesDetection.cpp.o
+Linking CXX shared library libimgAnalyze.so
+[ 32%] Built target imgAnalyze
+Scanning dependencies of target cvblob
+[ 32%] Building CXX object ../src/stable/libs/visionlib/cvBlob/CMakeFiles/cvblob.dir/cvblob.cpp.o
+[ 33%] Building CXX object ../src/stable/libs/visionlib/cvBlob/CMakeFiles/cvblob.dir/cvlabel.cpp.o
+[ 33%] Building CXX object ../src/stable/libs/visionlib/cvBlob/CMakeFiles/cvblob.dir/cvaux.cpp.o
+[ 33%] Building CXX object ../src/stable/libs/visionlib/cvBlob/CMakeFiles/cvblob.dir/cvcontour.cpp.o
+[ 34%] Building CXX object ../src/stable/libs/visionlib/cvBlob/CMakeFiles/cvblob.dir/cvtrack.cpp.o
+[ 34%] Building CXX object ../src/stable/libs/visionlib/cvBlob/CMakeFiles/cvblob.dir/cvcolor.cpp.o
+Linking CXX shared library libcvblob.so
+[ 34%] Built target cvblob
+Scanning dependencies of target colorspaces
+[ 34%] Building C object ../src/stable/libs/visionlib/colorspaces/CMakeFiles/colorspaces.dir/rgb2hsv.c.o
+cc1: warning: command line option ‘-Wno-invalid-offsetof’ is valid for C++/ObjC++ but not for C [enabled by default]
+[ 35%] Building C object ../src/stable/libs/visionlib/colorspaces/CMakeFiles/colorspaces.dir/rgb2yuv.c.o
+cc1: warning: command line option ‘-Wno-invalid-offsetof’ is valid for C++/ObjC++ but not for C [enabled by default]
+Linking C static library libcolorspaces.a
+[ 35%] Built target colorspaces
+Scanning dependencies of target colorspacesshare
+[ 36%] Building C object ../src/stable/libs/visionlib/colorspaces/CMakeFiles/colorspacesshare.dir/rgb2hsv.c.o
+cc1: warning: command line option ‘-Wno-invalid-offsetof’ is valid for C++/ObjC++ but not for C [enabled by default]
+[ 36%] Building C object ../src/stable/libs/visionlib/colorspaces/CMakeFiles/colorspacesshare.dir/rgb2yuv.c.o
+cc1: warning: command line option ‘-Wno-invalid-offsetof’ is valid for C++/ObjC++ but not for C [enabled by default]
+Linking C shared library libcolorspaces.so
+[ 36%] Built target colorspacesshare
+Scanning dependencies of target depthLib
+[ 37%] Building CXX object ../src/stable/libs/depthLib/CMakeFiles/depthLib.dir/DepthFilter.cpp.o
+[ 37%] Building CXX object ../src/stable/libs/depthLib/CMakeFiles/depthLib.dir/DepthSampler.cpp.o
+Linking CXX static library libdepthLib.a
+[ 37%] Built target depthLib
+Scanning dependencies of target depthLibshare
+[ 37%] Building CXX object ../src/stable/libs/depthLib/CMakeFiles/depthLibshare.dir/DepthFilter.cpp.o
+[ 38%] Building CXX object ../src/stable/libs/depthLib/CMakeFiles/depthLibshare.dir/DepthSampler.cpp.o
+Linking CXX shared library libdepthLib.so
+[ 38%] Built target depthLibshare
+Scanning dependencies of target ns
+[ 38%] Building CXX object ../src/stable/libs/ns/CMakeFiles/ns.dir/ns.cpp.o
+Linking CXX shared library libns.so
+[ 38%] Built target ns
+Scanning dependencies of target geometry
+[ 38%] Building CXX object ../src/stable/libs/geometry/CMakeFiles/geometry.dir/math/matriz3x3.cpp.o
+[ 38%] Building CXX object ../src/stable/libs/geometry/CMakeFiles/geometry.dir/math/matriz4x4.cpp.o
+[ 39%] Building CXX object ../src/stable/libs/geometry/CMakeFiles/geometry.dir/math/plano.cpp.o
+[ 39%] Building CXX object ../src/stable/libs/geometry/CMakeFiles/geometry.dir/math/utils.cpp.o
+[ 39%] Building CXX object ../src/stable/libs/geometry/CMakeFiles/geometry.dir/math/Line2D.cpp.o
+[ 40%] Building CXX object ../src/stable/libs/geometry/CMakeFiles/geometry.dir/math/Segment2D.cpp.o
+[ 40%] Building CXX object ../src/stable/libs/geometry/CMakeFiles/geometry.dir/math/Point2D.cpp.o
+[ 40%] Building CXX object ../src/stable/libs/geometry/CMakeFiles/geometry.dir/math/Point3D.cpp.o
+[ 41%] Building CXX object ../src/stable/libs/geometry/CMakeFiles/geometry.dir/math/Line3D.cpp.o
+[ 41%] Building CXX object ../src/stable/libs/geometry/CMakeFiles/geometry.dir/math/Plane3D.cpp.o
+[ 41%] Building CXX object ../src/stable/libs/geometry/CMakeFiles/geometry.dir/math/Segment3D.cpp.o
+[ 42%] Building CXX object ../src/stable/libs/geometry/CMakeFiles/geometry.dir/collada/colladaparser.cpp.o
+[ 42%] Building CXX object ../src/stable/libs/geometry/CMakeFiles/geometry.dir/collada/color.cpp.o
+[ 42%] Building CXX object ../src/stable/libs/geometry/CMakeFiles/geometry.dir/collada/malla.cpp.o
+[ 43%] Building CXX object ../src/stable/libs/geometry/CMakeFiles/geometry.dir/collada/material.cpp.o
+[ 43%] Building CXX object ../src/stable/libs/geometry/CMakeFiles/geometry.dir/collada/submalla.cpp.o
+[ 44%] Building CXX object ../src/stable/libs/geometry/CMakeFiles/geometry.dir/progeo/Progeo.cpp.o
+[ 44%] Building CXX object ../src/stable/libs/geometry/CMakeFiles/geometry.dir/math/segmento.cpp.o
+[ 44%] Building CXX object ../src/stable/libs/geometry/CMakeFiles/geometry.dir/math/recta.cpp.o
+Linking CXX shared library libgeometry.so
+[ 44%] Built target geometry
+[ 44%] Generating qrc_resources.cxx
+[ 44%] Generating moc_depuratewindow.cxx
+/home/hao/JdeRobot/JdeRobot/src/stable/components/introrob_qt/depuratewindow.h:0: Note: No relevant classes found. No output generated.
+[ 44%] Generating robot/moc_actuators.cxx
+/home/hao/JdeRobot/JdeRobot/src/stable/components/introrob_qt/robot/actuators.h:0: Note: No relevant classes found. No output generated.
+[ 45%] Generating robot/moc_robot.cxx
+[ 45%] Generating robot/moc_sensors.cxx
+/home/hao/JdeRobot/JdeRobot/src/stable/components/introrob_qt/robot/sensors.h:0: Note: No relevant classes found. No output generated.
+[ 45%] Generating robot/moc_threadupdaterobot.cxx
+/home/hao/JdeRobot/JdeRobot/src/stable/components/introrob_qt/robot/threadupdaterobot.h:0: Note: No relevant classes found. No output generated.
+[ 46%] Generating pioneer/moc_pioneer.cxx
+/home/hao/JdeRobot/JdeRobot/src/stable/components/introrob_qt/pioneer/pioneer.c:0: Note: No relevant classes found. No output generated.
+[ 46%] Generating pioneer/moc_pioneeropengl.cxx
+/home/hao/JdeRobot/JdeRobot/src/stable/components/introrob_qt/pioneer/pioneeropengl.c:0: Note: No relevant classes found. No output generated.
+[ 47%] Generating gui/moc_gui.cxx
+[ 47%] Generating gui/moc_stategui.cxx
+/home/hao/JdeRobot/JdeRobot/src/stable/components/introrob_qt/gui/stategui.h:0: Note: No relevant classes found. No output generated.
+[ 47%] Generating gui/moc_threadupdategui.cxx
+/home/hao/JdeRobot/JdeRobot/src/stable/components/introrob_qt/gui/threadupdategui.h:0: Note: No relevant classes found. No output generated.
+[ 48%] Generating gui/widget/moc_cameraswidget.cxx
+[ 48%] Generating gui/widget/moc_controlvw.cxx
+[ 48%] Generating gui/widget/moc_glwidget.cxx
+[ 49%] Generating gui/widget/moc_laserwidget.cxx
+/home/hao/JdeRobot/JdeRobot/src/stable/components/introrob_qt/gui/widget/laserwidget.h:0: Note: No relevant classes found. No output generated.
+Scanning dependencies of target introrob_qt
+[ 49%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/main.cpp.o
+[ 50%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/depuratewindow.cpp.o
+[ 50%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/MyAlgorithm.cpp.o
+[ 50%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/robot/actuators.cpp.o
+[ 51%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/robot/robot.cpp.o
+[ 51%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/robot/sensors.cpp.o
+[ 51%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/robot/threadupdaterobot.cpp.o
+[ 52%] Building C object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/pioneer/pioneer.c.o
+cc1: warning: command line option ‘-Wno-invalid-offsetof’ is valid for C++/ObjC++ but not for C [enabled by default]
+[ 52%] Building C object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/pioneer/pioneeropengl.c.o
+cc1: warning: command line option ‘-Wno-invalid-offsetof’ is valid for C++/ObjC++ but not for C [enabled by default]
+[ 52%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/gui/gui.cpp.o
+[ 53%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/gui/stategui.cpp.o
+[ 53%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/gui/threadupdategui.cpp.o
+[ 53%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/gui/widget/cameraswidget.cpp.o
+[ 54%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/gui/widget/controlvw.cpp.o
+[ 54%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/gui/widget/glwidget.cpp.o
+[ 55%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/gui/widget/laserwidget.cpp.o
+[ 55%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/moc_depuratewindow.cxx.o
+[ 55%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/robot/moc_actuators.cxx.o
+[ 56%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/robot/moc_robot.cxx.o
+[ 56%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/robot/moc_sensors.cxx.o
+[ 56%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/robot/moc_threadupdaterobot.cxx.o
+[ 57%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/pioneer/moc_pioneer.cxx.o
+[ 57%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/pioneer/moc_pioneeropengl.cxx.o
+[ 57%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/gui/moc_gui.cxx.o
+[ 58%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/gui/moc_stategui.cxx.o
+[ 58%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/gui/moc_threadupdategui.cxx.o
+[ 58%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/gui/widget/moc_cameraswidget.cxx.o
+[ 59%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/gui/widget/moc_controlvw.cxx.o
+[ 59%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/gui/widget/moc_glwidget.cxx.o
+[ 59%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/gui/widget/moc_laserwidget.cxx.o
+[ 60%] Building CXX object ../src/stable/components/introrob_qt/CMakeFiles/introrob_qt.dir/qrc_resources.cxx.o
+Linking CXX executable introrob_qt
+[ 60%] Built target introrob_qt
+Scanning dependencies of target namingService
+[ 60%] Building CXX object ../src/stable/components/namingService/CMakeFiles/namingService.dir/main.cpp.o
+[ 61%] Building CXX object ../src/stable/components/namingService/CMakeFiles/namingService.dir/NamingServiceJdeRobot.cpp.o
+Linking CXX executable namingService
+[ 61%] Built target namingService
+Scanning dependencies of target replayController
+[ 61%] Building CXX object ../src/stable/components/replayController/CMakeFiles/replayController.dir/replayController.cpp.o
+[ 61%] Building CXX object ../src/stable/components/replayController/CMakeFiles/replayController.dir/replayControllerGui.cpp.o
+Linking CXX executable replayController
+[ 61%] Built target replayController
+Scanning dependencies of target camera_dump
+[ 61%] Building CXX object ../src/stable/components/gazeboserver/plugins/pioneer/CMakeFiles/camera_dump.dir/camera_dump.cc.o
+Linking CXX shared library libcamera_dump.so
+[ 61%] Built target camera_dump
+Scanning dependencies of target encoders
+[ 61%] Building CXX object ../src/stable/components/gazeboserver/plugins/pioneer/CMakeFiles/encoders.dir/encoders.cc.o
+Linking CXX shared library libencoders.so
+[ 61%] Built target encoders
+Scanning dependencies of target laser
+[ 61%] Building CXX object ../src/stable/components/gazeboserver/plugins/pioneer/CMakeFiles/laser.dir/laser.cc.o
+Linking CXX shared library liblaser.so
+[ 61%] Built target laser
+Scanning dependencies of target motors
+[ 62%] Building CXX object ../src/stable/components/gazeboserver/plugins/pioneer/CMakeFiles/motors.dir/motors.cc.o
+Linking CXX shared library libmotors.so
+[ 62%] Built target motors
+Scanning dependencies of target pose3dencoders
+[ 62%] Building CXX object ../src/stable/components/gazeboserver/plugins/pioneer/CMakeFiles/pose3dencoders.dir/pose3dencoders.cc.o
+Linking CXX shared library libpose3dencoders.so
+[ 62%] Built target pose3dencoders
+Scanning dependencies of target ballencoder
+[ 63%] Building CXX object ../src/stable/components/gazeboserver/plugins/nao/CMakeFiles/ballencoder.dir/ballred.cc.o
+Linking CXX shared library libballencoder.so
+[ 63%] Built target ballencoder
+Scanning dependencies of target camera_nao
+[ 63%] Building CXX object ../src/stable/components/gazeboserver/plugins/nao/CMakeFiles/camera_nao.dir/camera_dump.cc.o
+Linking CXX shared library libcamera_nao.so
+[ 63%] Built target camera_nao
+Scanning dependencies of target poseleftankle
+[ 64%] Building CXX object ../src/stable/components/gazeboserver/plugins/nao/CMakeFiles/poseleftankle.dir/poseleftankle.cc.o
+Linking CXX shared library libposeleftankle.so
+[ 64%] Built target poseleftankle
+Scanning dependencies of target poseleftelbow
+[ 64%] Building CXX object ../src/stable/components/gazeboserver/plugins/nao/CMakeFiles/poseleftelbow.dir/poseleftelbow.cc.o
+Linking CXX shared library libposeleftelbow.so
+[ 64%] Built target poseleftelbow
+Scanning dependencies of target poselefthip
+[ 64%] Building CXX object ../src/stable/components/gazeboserver/plugins/nao/CMakeFiles/poselefthip.dir/poselefthip.cc.o
+Linking CXX shared library libposelefthip.so
+[ 64%] Built target poselefthip
+Scanning dependencies of target poseleftknee
+[ 65%] Building CXX object ../src/stable/components/gazeboserver/plugins/nao/CMakeFiles/poseleftknee.dir/poseleftknee.cc.o
+Linking CXX shared library libposeleftknee.so
+[ 65%] Built target poseleftknee
+Scanning dependencies of target poseleftshoulder
+[ 65%] Building CXX object ../src/stable/components/gazeboserver/plugins/nao/CMakeFiles/poseleftshoulder.dir/poseleftshoulder.cc.o
+Linking CXX shared library libposeleftshoulder.so
+[ 65%] Built target poseleftshoulder
+Scanning dependencies of target poseneck
+[ 66%] Building CXX object ../src/stable/components/gazeboserver/plugins/nao/CMakeFiles/poseneck.dir/poseneck.cc.o
+Linking CXX shared library libposeneck.so
+[ 66%] Built target poseneck
+Scanning dependencies of target poseneckspeed
+[ 66%] Building CXX object ../src/stable/components/gazeboserver/plugins/nao/CMakeFiles/poseneckspeed.dir/poseneckspeed.cc.o
+Linking CXX shared library libposeneckspeed.so
+[ 66%] Built target poseneckspeed
+Scanning dependencies of target poserightankle
+[ 66%] Building CXX object ../src/stable/components/gazeboserver/plugins/nao/CMakeFiles/poserightankle.dir/poserightankle.cc.o
+Linking CXX shared library libposerightankle.so
+[ 66%] Built target poserightankle
+Scanning dependencies of target poserightelbow
+[ 67%] Building CXX object ../src/stable/components/gazeboserver/plugins/nao/CMakeFiles/poserightelbow.dir/poserightelbow.cc.o
+Linking CXX shared library libposerightelbow.so
+[ 67%] Built target poserightelbow
+Scanning dependencies of target poserighthip
+[ 67%] Building CXX object ../src/stable/components/gazeboserver/plugins/nao/CMakeFiles/poserighthip.dir/poserighthip.cc.o
+Linking CXX shared library libposerighthip.so
+[ 67%] Built target poserighthip
+Scanning dependencies of target poserightknee
+[ 67%] Building CXX object ../src/stable/components/gazeboserver/plugins/nao/CMakeFiles/poserightknee.dir/poserightknee.cc.o
+Linking CXX shared library libposerightknee.so
+[ 67%] Built target poserightknee
+Scanning dependencies of target poserightshoulder
+[ 68%] Building CXX object ../src/stable/components/gazeboserver/plugins/nao/CMakeFiles/poserightshoulder.dir/poserightshoulder.cc.o
+Linking CXX shared library libposerightshoulder.so
+[ 68%] Built target poserightshoulder
+Scanning dependencies of target introrob
+[ 69%] Building CXX object ../src/stable/components/introrob/CMakeFiles/introrob.dir/API.cpp.o
+[ 69%] Building CXX object ../src/stable/components/introrob/CMakeFiles/introrob.dir/control.cpp.o
+[ 69%] Building CXX object ../src/stable/components/introrob/CMakeFiles/introrob.dir/drawarea.cpp.o
+[ 70%] Building CXX object ../src/stable/components/introrob/CMakeFiles/introrob.dir/gui.cpp.o
+[ 70%] Building CXX object ../src/stable/components/introrob/CMakeFiles/introrob.dir/introrob.cpp.o
+[ 70%] Building CXX object ../src/stable/components/introrob/CMakeFiles/introrob.dir/MyAlgorithms.cpp.o
+[ 71%] Building C object ../src/stable/components/introrob/CMakeFiles/introrob.dir/pioneer.c.o
+cc1: warning: command line option ‘-Wno-invalid-offsetof’ is valid for C++/ObjC++ but not for C [enabled by default]
+[ 71%] Building C object ../src/stable/components/introrob/CMakeFiles/introrob.dir/pioneeropengl.c.o
+cc1: warning: command line option ‘-Wno-invalid-offsetof’ is valid for C++/ObjC++ but not for C [enabled by default]
+Linking CXX executable introrob
+[ 71%] Built target introrob
+Scanning dependencies of target recorder
+[ 72%] Building CXX object ../src/stable/components/recorder/CMakeFiles/recorder.dir/recorder.cpp.o
+[ 72%] Building CXX object ../src/stable/components/recorder/CMakeFiles/recorder.dir/recordergui.cpp.o
+[ 72%] Building CXX object ../src/stable/components/recorder/CMakeFiles/recorder.dir/poolWriteImages.cpp.o
+[ 73%] Building CXX object ../src/stable/components/recorder/CMakeFiles/recorder.dir/poolWritePose3dEncoders.cpp.o
+[ 73%] Building CXX object ../src/stable/components/recorder/CMakeFiles/recorder.dir/poolWriteLasers.cpp.o
+[ 73%] Building CXX object ../src/stable/components/recorder/CMakeFiles/recorder.dir/poolWritePointCloud.cpp.o
+[ 74%] Building CXX object ../src/stable/components/recorder/CMakeFiles/recorder.dir/poolWriteEncoders.cpp.o
+[ 74%] Building CXX object ../src/stable/components/recorder/CMakeFiles/recorder.dir/RingBuffer.cpp.o
+Linking CXX executable recorder
+[ 74%] Built target recorder
+Scanning dependencies of target giraffeClient
+[ 75%] Building CXX object ../src/stable/components/giraffeClient/CMakeFiles/giraffeClient.dir/giraffeClient.cpp.o
+[ 75%] Building CXX object ../src/stable/components/giraffeClient/CMakeFiles/giraffeClient.dir/controller.cpp.o
+[ 75%] Building CXX object ../src/stable/components/giraffeClient/CMakeFiles/giraffeClient.dir/view.cpp.o
+[ 76%] Building CXX object ../src/stable/components/giraffeClient/CMakeFiles/giraffeClient.dir/cameraconf.cpp.o
+Linking CXX executable giraffeClient
+[ 76%] Built target giraffeClient
+Scanning dependencies of target basic_component
+[ 76%] Building CXX object ../src/stable/components/basic_component/CMakeFiles/basic_component.dir/control/control.cpp.o
+[ 77%] Building CXX object ../src/stable/components/basic_component/CMakeFiles/basic_component.dir/control/threadcontrol.cpp.o
+[ 77%] Building CXX object ../src/stable/components/basic_component/CMakeFiles/basic_component.dir/gui/gui.cpp.o
+[ 77%] Building CXX object ../src/stable/components/basic_component/CMakeFiles/basic_component.dir/gui/threadgui.cpp.o
+[ 78%] Building CXX object ../src/stable/components/basic_component/CMakeFiles/basic_component.dir/basic_component.cpp.o
+[ 78%] Building CXX object ../src/stable/components/basic_component/CMakeFiles/basic_component.dir/shared.cpp.o
+Linking CXX executable basic_component
+[ 78%] Built target basic_component
+Scanning dependencies of target opencvdemo
+[ 78%] Building CXX object ../src/stable/components/opencvdemo/CMakeFiles/opencvdemo.dir/opencvdemo.cpp.o
+[ 79%] Building CXX object ../src/stable/components/opencvdemo/CMakeFiles/opencvdemo.dir/viewer.cpp.o
+Linking CXX executable opencvdemo
+[ 79%] Built target opencvdemo
+Scanning dependencies of target rgbdCalibrator
+[ 79%] Building CXX object ../src/stable/components/rgbdCalibrator/CMakeFiles/rgbdCalibrator.dir/rgbdCalibrator.cpp.o
+[ 79%] Building CXX object ../src/stable/components/rgbdCalibrator/CMakeFiles/rgbdCalibrator.dir/viewer.cpp.o
+[ 80%] Building CXX object ../src/stable/components/rgbdCalibrator/CMakeFiles/rgbdCalibrator.dir/calibration.cpp.o
+[ 80%] Building CXX object ../src/stable/components/rgbdCalibrator/CMakeFiles/rgbdCalibrator.dir/geoUtils.cpp.o
+Linking CXX executable rgbdCalibrator
+[ 80%] Built target rgbdCalibrator
+[ 81%] Generating gui/moc_gui.cxx
+Scanning dependencies of target basic_component_qt
+[ 81%] Building CXX object ../src/stable/components/basic_component_qt/CMakeFiles/basic_component_qt.dir/basic_component_qt.cpp.o
+[ 82%] Building CXX object ../src/stable/components/basic_component_qt/CMakeFiles/basic_component_qt.dir/control/threadcontrol.cpp.o
+[ 82%] Building CXX object ../src/stable/components/basic_component_qt/CMakeFiles/basic_component_qt.dir/control/control.cpp.o
+[ 82%] Building CXX object ../src/stable/components/basic_component_qt/CMakeFiles/basic_component_qt.dir/gui/threadgui.cpp.o
+[ 83%] Building CXX object ../src/stable/components/basic_component_qt/CMakeFiles/basic_component_qt.dir/gui/gui.cpp.o
+[ 83%] Building CXX object ../src/stable/components/basic_component_qt/CMakeFiles/basic_component_qt.dir/shared.cpp.o
+[ 83%] Building CXX object ../src/stable/components/basic_component_qt/CMakeFiles/basic_component_qt.dir/gui/moc_gui.cxx.o
+Linking CXX executable basic_component_qt
+[ 83%] Built target basic_component_qt
+Scanning dependencies of target openniServer
+[ 84%] Building CXX object ../src/stable/components/openniServer/CMakeFiles/openniServer.dir/openniServer.cpp.o
+c++: warning: ./: linker input file unused because linking not done
+[ 84%] Building CXX object ../src/stable/components/openniServer/CMakeFiles/openniServer.dir/myprogeo.cpp.o
+c++: warning: ./: linker input file unused because linking not done
+Linking CXX executable openniServer
+[ 84%] Built target openniServer
+Scanning dependencies of target teleoperatorPC
+[ 84%] Building CXX object ../src/stable/components/teleoperator/CMakeFiles/teleoperatorPC.dir/teleoperatorPC.cpp.o
+[ 84%] Building CXX object ../src/stable/components/teleoperator/CMakeFiles/teleoperatorPC.dir/SharedMemory.cpp.o
+[ 85%] Building CXX object ../src/stable/components/teleoperator/CMakeFiles/teleoperatorPC.dir/Gui.cpp.o
+[ 85%] Building CXX object ../src/stable/components/teleoperator/CMakeFiles/teleoperatorPC.dir/controlICE.cpp.o
+Linking CXX executable teleoperatorPC
+[ 85%] Built target teleoperatorPC
+Scanning dependencies of target rgbdViewer
+[ 86%] Building CXX object ../src/stable/components/rgbdViewer/CMakeFiles/rgbdViewer.dir/rgbdViewer.cpp.o
+[ 86%] Building CXX object ../src/stable/components/rgbdViewer/CMakeFiles/rgbdViewer.dir/drawarea.cpp.o
+/home/hao/JdeRobot/JdeRobot/src/stable/components/rgbdViewer/drawarea.cpp: In member function ‘int rgbdViewer::DrawArea::load_line(FILE*)’:
+/home/hao/JdeRobot/JdeRobot/src/stable/components/rgbdViewer/drawarea.cpp:524:162: warning: format ‘%s’ expects a matching ‘char*’ argument [-Wformat]
+[ 86%] Building CXX object ../src/stable/components/rgbdViewer/CMakeFiles/rgbdViewer.dir/rgbdViewergui.cpp.o
+[ 87%] Building CXX object ../src/stable/components/rgbdViewer/CMakeFiles/rgbdViewer.dir/myprogeo.cpp.o
+Linking CXX executable rgbdViewer
+[ 87%] Built target rgbdViewer
+Scanning dependencies of target cameraserver
+[ 88%] Building CXX object ../src/stable/components/cameraserver/CMakeFiles/cameraserver.dir/cameraserver.cpp.o
+Linking CXX executable cameraserver
+[ 88%] Built target cameraserver
+Scanning dependencies of target followball
+[ 89%] Building CXX object ../src/stable/components/followBall/CMakeFiles/followball.dir/viewer.cpp.o
+[ 89%] Building CXX object ../src/stable/components/followBall/CMakeFiles/followball.dir/sensors.cpp.o
+[ 89%] Building CXX object ../src/stable/components/followBall/CMakeFiles/followball.dir/control.cpp.o
+[ 90%] Building CXX object ../src/stable/components/followBall/CMakeFiles/followball.dir/handler.cpp.o
+[ 90%] Building CXX object ../src/stable/components/followBall/CMakeFiles/followball.dir/main.cpp.o
+Linking CXX executable followball
+[ 90%] Built target followball
+[ 91%] Generating myInterface.cpp, myInterface.h
+Scanning dependencies of target basic_server
+[ 91%] Building CXX object ../src/stable/components/basic_server/CMakeFiles/basic_server.dir/basic_server.cpp.o
+[ 91%] Building CXX object ../src/stable/components/basic_server/CMakeFiles/basic_server.dir/myInterface.cpp.o
+Linking CXX executable basic_server
+[ 91%] Built target basic_server
+Scanning dependencies of target remoteConfiguration
+[ 91%] Building CXX object ../src/stable/components/remoteConfiguration/CMakeFiles/remoteConfiguration.dir/remoteConfiguration.cpp.o
+[ 92%] Building CXX object ../src/stable/components/remoteConfiguration/CMakeFiles/remoteConfiguration.dir/myparser.cpp.o
+Linking CXX executable remoteConfiguration
+[ 92%] Built target remoteConfiguration
+Scanning dependencies of target cameraview
+[ 92%] Building CXX object ../src/stable/components/cameraview/CMakeFiles/cameraview.dir/cameraview.cpp.o
+[ 93%] Building CXX object ../src/stable/components/cameraview/CMakeFiles/cameraview.dir/viewer.cpp.o
+Linking CXX executable cameraview
+[ 93%] Built target cameraview
+Scanning dependencies of target replayer
+[ 94%] Building CXX object ../src/stable/components/replayer/CMakeFiles/replayer.dir/replayer.cpp.o
+[ 94%] Building CXX object ../src/stable/components/replayer/CMakeFiles/replayer.dir/replayergui.cpp.o
+[ 95%] Building CXX object ../src/stable/components/replayer/CMakeFiles/replayer.dir/control.cpp.o
+Linking CXX executable replayer
+[ 95%] Built target replayer
+Scanning dependencies of target giraffeServer
+[ 95%] Building CXX object ../src/stable/components/giraffeServer/CMakeFiles/giraffeServer.dir/jointmotorComp.cpp.o
+[ 95%] Building CXX object ../src/stable/components/giraffeServer/CMakeFiles/giraffeServer.dir/jointmotorI.cpp.o
+[ 96%] Building CXX object ../src/stable/components/giraffeServer/CMakeFiles/giraffeServer.dir/worker.cpp.o
+[ 96%] Building CXX object ../src/stable/components/giraffeServer/CMakeFiles/giraffeServer.dir/dynamixel.cpp.o
+[ 96%] Building CXX object ../src/stable/components/giraffeServer/CMakeFiles/giraffeServer.dir/monitor.cpp.o
+[ 97%] Building CXX object ../src/stable/components/giraffeServer/CMakeFiles/giraffeServer.dir/servo.cpp.o
+[ 97%] Building CXX object ../src/stable/components/giraffeServer/CMakeFiles/giraffeServer.dir/q4serialport/q4serialport.cpp.o
+[ 97%] Building CXX object ../src/stable/components/giraffeServer/CMakeFiles/giraffeServer.dir/moc_monitor.cpp.o
+[ 98%] Building CXX object ../src/stable/components/giraffeServer/CMakeFiles/giraffeServer.dir/moc_q4serialport.cpp.o
+[ 98%] Building CXX object ../src/stable/components/giraffeServer/CMakeFiles/giraffeServer.dir/moc_worker.cpp.o
+Linking CXX executable giraffeServer
+[ 98%] Built target giraffeServer
+Scanning dependencies of target colorTuner
+[ 99%] Building CXX object ../src/stable/components/colorTuner/CMakeFiles/colorTuner.dir/viewer.cpp.o
+[ 99%] Building CXX object ../src/stable/components/colorTuner/CMakeFiles/colorTuner.dir/colorTuner.cpp.o
+Linking CXX executable colorTuner
+[ 99%] Built target colorTuner
+Scanning dependencies of target openni1Server
+[ 99%] Building CXX object ../src/stable/components/openni1Server/CMakeFiles/openni1Server.dir/openni1Server.cpp.o
+[ 99%] Building CXX object ../src/stable/components/openni1Server/CMakeFiles/openni1Server.dir/myprogeo.cpp.o
+Linking CXX executable openni1Server
+[ 99%] Built target openni1Server
+Scanning dependencies of target cameraview_icestorm
+[ 99%] Building CXX object ../src/stable/components/cameraview_icestorm/CMakeFiles/cameraview_icestorm.dir/viewer.cpp.o
+[ 99%] Building CXX object ../src/stable/components/cameraview_icestorm/CMakeFiles/cameraview_icestorm.dir/cameraview_icestorm.cpp.o
+Linking CXX executable cameraview_icestorm
+[ 99%] Built target cameraview_icestorm
+Scanning dependencies of target rgbdManualCalibrator
+[ 99%] Building CXX object ../src/stable/components/rgbdManualCalibrator/CMakeFiles/rgbdManualCalibrator.dir/controller.cpp.o
+[100%] Building CXX object ../src/stable/components/rgbdManualCalibrator/CMakeFiles/rgbdManualCalibrator.dir/drawarea.cpp.o
+/home/hao/JdeRobot/JdeRobot/src/stable/components/rgbdManualCalibrator/drawarea.cpp: In member function ‘int rgbdManualCalibrator::DrawArea::load_line(FILE*)’:
+/home/hao/JdeRobot/JdeRobot/src/stable/components/rgbdManualCalibrator/drawarea.cpp:520:162: warning: format ‘%s’ expects a matching ‘char*’ argument [-Wformat]
+[100%] Building CXX object ../src/stable/components/rgbdManualCalibrator/CMakeFiles/rgbdManualCalibrator.dir/rgbdManualCalibrator.cpp.o
+[100%] Building CXX object ../src/stable/components/rgbdManualCalibrator/CMakeFiles/rgbdManualCalibrator.dir/view.cpp.o
+Linking CXX executable rgbdManualCalibrator
+[100%] Built target rgbdManualCalibrator
+Scanning dependencies of target pclRGBDServer
+[100%] Building CXX object ../src/stable/components/pclRGBDServer/CMakeFiles/pclRGBDServer.dir/kinectServer.cpp.o
+Linking CXX executable pclRGBDServer
+[100%] Built target pclRGBDServer
+
+
+
+
+
+
+hao@haopc:~/JdeRobot/JdeRobot/build$ sudo make install 
+[ 22%] Built target JderobotInterfaces
+[ 23%] Built target jderobotutil
+[ 24%] Built target jderobotutilshare
+[ 24%] Built target jderobotViewer
+[ 25%] Built target jderobotViewerShare
+[ 26%] Built target xmlParser
+[ 27%] Built target xmlParsershare
+[ 28%] Built target pioneer
+[ 28%] Built target pioneershare
+[ 28%] Built target progeo
+[ 28%] Built target progeoshare
+[ 28%] Built target logger
+[ 28%] Built target colorspacesmm
+[ 29%] Built target parallelIce
+[ 29%] Built target colorspacesmmshare
+[ 30%] Built target parallelIceshare
+[ 30%] Built target fuzzylib
+[ 31%] Built target fuzzyshare
+[ 31%] Built target cvfast
+[ 32%] Built target imgAnalyze
+[ 34%] Built target cvblob
+[ 35%] Built target colorspaces
+[ 36%] Built target colorspacesshare
+[ 37%] Built target depthLib
+[ 38%] Built target depthLibshare
+[ 38%] Built target ns
+[ 44%] Built target geometry
+[ 60%] Built target introrob_qt
+[ 61%] Built target namingService
+[ 61%] Built target replayController
+[ 61%] Built target camera_dump
+[ 61%] Built target encoders
+[ 61%] Built target laser
+[ 62%] Built target motors
+[ 62%] Built target pose3dencoders
+[ 63%] Built target ballencoder
+[ 63%] Built target camera_nao
+[ 64%] Built target poseleftankle
+[ 64%] Built target poseleftelbow
+[ 64%] Built target poselefthip
+[ 65%] Built target poseleftknee
+[ 65%] Built target poseleftshoulder
+[ 66%] Built target poseneck
+[ 66%] Built target poseneckspeed
+[ 66%] Built target poserightankle
+[ 67%] Built target poserightelbow
+[ 67%] Built target poserighthip
+[ 67%] Built target poserightknee
+[ 68%] Built target poserightshoulder
+[ 71%] Built target introrob
+[ 74%] Built target recorder
+[ 76%] Built target giraffeClient
+[ 78%] Built target basic_component
+[ 79%] Built target opencvdemo
+[ 80%] Built target rgbdCalibrator
+[ 83%] Built target basic_component_qt
+[ 84%] Built target openniServer
+[ 85%] Built target teleoperatorPC
+[ 87%] Built target rgbdViewer
+[ 88%] Built target cameraserver
+[ 90%] Built target followball
+[ 91%] Built target basic_server
+[ 92%] Built target remoteConfiguration
+[ 93%] Built target cameraview
+[ 95%] Built target replayer
+[ 98%] Built target giraffeServer
+[ 99%] Built target colorTuner
+[ 99%] Built target openni1Server
+[ 99%] Built target cameraview_icestorm
+[100%] Built target rgbdManualCalibrator
+[100%] Built target pclRGBDServer
+Install the project...
+-- Install configuration: ""
+-- Installing: /usr/local/lib/jderobot/libJderobotInterfaces.so
+-- Installing: /usr/lib/python2.7/jderobot/__init__.py
+-- Installing: /usr/lib/python2.7/jderobot/encoders_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/bodyencoders_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/exceptions_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/pointcloud_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/remoteCloud_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/varcolor_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/sonars_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/naomotions_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/recorder_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/jointmotor_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/ptencoders_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/camera_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/motors_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/kinectleds_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/jcm_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/pose3dmotors_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/bodymotors_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/remoteConfig_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/wiimote_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/image_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/replayControl_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/genericData_ice.py
+-- Up-to-date: /usr/lib/python2.7/jderobot/__init__.py
+-- Installing: /usr/lib/python2.7/jderobot/containers_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/naofollowball_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/bodymovements_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/namingService_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/body_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/datetime_ice.py
+-- Up-to-date: /usr/lib/python2.7/jderobot/__init__.py
+-- Installing: /usr/lib/python2.7/jderobot/common_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/pose3d_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/ptmotors_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/laser_ice.py
+-- Installing: /usr/lib/python2.7/jderobot/pose3dencoders_ice.py
+-- Installing: /usr/local/include/jderobot/jderobotutil/paramdict.h
+-- Installing: /usr/local/include/jderobot/jderobotutil/uncopyable.h
+-- Installing: /usr/local/include/jderobot/jderobotutil/jderobotutil.h
+-- Installing: /usr/local/include/jderobot/jderobotutil/observer.h
+-- Installing: /usr/local/include/jderobot/jderobotutil/time.h
+-- Installing: /usr/local/include/jderobot/jderobotViewer/JderobotViewer.h
+-- Installing: /usr/local/include/jderobot/xmlParser/xmlReaderParser.h
+-- Installing: /usr/local/include/jderobot/xmlParser/xmlWriterParser.h
+-- Installing: /usr/local/include/jderobot/pioneer/pioneer.h
+-- Installing: /usr/local/include/jderobot/progeo/progeo.h
+-- Installing: /usr/local/include/jderobot/parallelIce/laserClient.h
+-- Installing: /usr/local/include/jderobot/parallelIce/cameraClient.h
+-- Installing: /usr/local/include/jderobot/parallelIce/pointcloudClient.h
+-- Installing: /usr/local/include/jderobot/fuzzylib/fuzzylib.h
+-- Installing: /usr/local/include/jderobot/visionlib/cvFast/cvfast.h
+-- Installing: /usr/local/include/jderobot/visionlib/imgAnalyze/linesDetection.h
+-- Installing: /usr/local/include/jderobot/visionlib/imgAnalyze/image.h
+-- Installing: /usr/local/include/jderobot/visionlib/imgAnalyze/structs.h
+-- Installing: /usr/local/include/jderobot/visionlib/imgAnalyze/geometry.h
+-- Installing: /usr/local/include/jderobot/visionlib/cvBlob/cvblob.h
+-- Installing: /usr/local/include/jderobot/visionlib/visionlib.h
+-- Installing: /usr/local/include/jderobot/visionlib/colorspaces/uncopyable.h
+-- Installing: /usr/local/include/jderobot/visionlib/colorspaces/colorspaces.h
+-- Installing: /usr/local/include/jderobot/visionlib/colorspaces/imagecv.h
+-- Installing: /usr/local/include/jderobot/visionlib/colorspaces/colorspacesmm.h
+-- Installing: /usr/local/include/jderobot/log/Logger.h
+-- Installing: /usr/local/include/jderobot/depthLib/DepthSampler.h
+-- Installing: /usr/local/include/jderobot/depthLib/DepthFilter.h
+-- Installing: /usr/local/include/jderobot/ns/ns.h
+-- Installing: /usr/local/include/jderobot/geometry/Dense.h
+-- Installing: /usr/local/include/jderobot/geometry/progeo/Progeo.h
+-- Installing: /usr/local/include/jderobot/geometry/collada/malla.h
+-- Installing: /usr/local/include/jderobot/geometry/collada/color.h
+-- Installing: /usr/local/include/jderobot/geometry/collada/colladaparser.h
+-- Installing: /usr/local/include/jderobot/geometry/collada/material.h
+-- Installing: /usr/local/include/jderobot/geometry/collada/submalla.h
+-- Installing: /usr/local/include/jderobot/geometry/math/recta.h
+-- Installing: /usr/local/include/jderobot/geometry/math/Point3D.h
+-- Installing: /usr/local/include/jderobot/geometry/math/matriz4x4.h
+-- Installing: /usr/local/include/jderobot/geometry/math/Line3D.h
+-- Installing: /usr/local/include/jderobot/geometry/math/Line2D.h
+-- Installing: /usr/local/include/jderobot/geometry/math/matriz3x3.h
+-- Installing: /usr/local/include/jderobot/geometry/math/plano.h
+-- Installing: /usr/local/include/jderobot/geometry/math/segmento.h
+-- Installing: /usr/local/include/jderobot/geometry/math/utils.h
+-- Installing: /usr/local/include/jderobot/geometry/math/geoconst.h
+-- Installing: /usr/local/include/jderobot/geometry/math/Plane3D.h
+-- Installing: /usr/local/include/jderobot/geometry/math/Segment3D.h
+-- Installing: /usr/local/include/jderobot/geometry/math/Point2D.h
+-- Installing: /usr/local/include/jderobot/geometry/math/Segment2D.h
+-- Up-to-date: /usr/local/include/jderobot/jderobotutil/paramdict.h
+-- Up-to-date: /usr/local/include/jderobot/jderobotutil/uncopyable.h
+-- Up-to-date: /usr/local/include/jderobot/jderobotutil/jderobotutil.h
+-- Up-to-date: /usr/local/include/jderobot/jderobotutil/observer.h
+-- Up-to-date: /usr/local/include/jderobot/jderobotutil/time.h
+-- Up-to-date: /usr/local/include/jderobot/jderobotViewer/JderobotViewer.h
+-- Up-to-date: /usr/local/include/jderobot/xmlParser/xmlReaderParser.h
+-- Up-to-date: /usr/local/include/jderobot/xmlParser/xmlWriterParser.h
+-- Up-to-date: /usr/local/include/jderobot/pioneer/pioneer.h
+-- Up-to-date: /usr/local/include/jderobot/progeo/progeo.h
+-- Up-to-date: /usr/local/include/jderobot/parallelIce/laserClient.h
+-- Up-to-date: /usr/local/include/jderobot/parallelIce/cameraClient.h
+-- Up-to-date: /usr/local/include/jderobot/parallelIce/pointcloudClient.h
+-- Up-to-date: /usr/local/include/jderobot/fuzzylib/fuzzylib.h
+-- Installing: /usr/local/include/jderobot/cvFast/cvfast.h
+-- Installing: /usr/local/include/jderobot/imgAnalyze/linesDetection.h
+-- Installing: /usr/local/include/jderobot/imgAnalyze/image.h
+-- Installing: /usr/local/include/jderobot/imgAnalyze/structs.h
+-- Installing: /usr/local/include/jderobot/imgAnalyze/geometry.h
+-- Installing: /usr/local/include/jderobot/cvBlob/cvblob.h
+-- Up-to-date: /usr/local/include/jderobot/visionlib/visionlib.h
+-- Installing: /usr/local/include/jderobot/colorspaces/uncopyable.h
+-- Installing: /usr/local/include/jderobot/colorspaces/colorspaces.h
+-- Installing: /usr/local/include/jderobot/colorspaces/imagecv.h
+-- Installing: /usr/local/include/jderobot/colorspaces/colorspacesmm.h
+-- Up-to-date: /usr/local/include/jderobot/log/Logger.h
+-- Up-to-date: /usr/local/include/jderobot/depthLib/DepthSampler.h
+-- Up-to-date: /usr/local/include/jderobot/depthLib/DepthFilter.h
+-- Up-to-date: /usr/local/include/jderobot/ns/ns.h
+-- Up-to-date: /usr/local/include/jderobot/geometry/Dense.h
+-- Installing: /usr/local/include/jderobot/progeo/Progeo.h
+-- Installing: /usr/local/include/jderobot/collada/malla.h
+-- Installing: /usr/local/include/jderobot/collada/color.h
+-- Installing: /usr/local/include/jderobot/collada/colladaparser.h
+-- Installing: /usr/local/include/jderobot/collada/material.h
+-- Installing: /usr/local/include/jderobot/collada/submalla.h
+-- Installing: /usr/local/include/jderobot/math/recta.h
+-- Installing: /usr/local/include/jderobot/math/Point3D.h
+-- Installing: /usr/local/include/jderobot/math/matriz4x4.h
+-- Installing: /usr/local/include/jderobot/math/Line3D.h
+-- Installing: /usr/local/include/jderobot/math/Line2D.h
+-- Installing: /usr/local/include/jderobot/math/matriz3x3.h
+-- Installing: /usr/local/include/jderobot/math/plano.h
+-- Installing: /usr/local/include/jderobot/math/segmento.h
+-- Installing: /usr/local/include/jderobot/math/utils.h
+-- Installing: /usr/local/include/jderobot/math/geoconst.h
+-- Installing: /usr/local/include/jderobot/math/Plane3D.h
+-- Installing: /usr/local/include/jderobot/math/Segment3D.h
+-- Installing: /usr/local/include/jderobot/math/Point2D.h
+-- Installing: /usr/local/include/jderobot/math/Segment2D.h
+-- Installing: /usr/local/bin/icestorm
+-- Installing: /usr/local/bin/introrob_qt
+-- Installing: /usr/local/bin/namingService
+-- Installing: /usr/local/bin/replayController
+-- Installing: /usr/local/bin/introrob
+-- Installing: /usr/local/bin/recorder
+-- Installing: /usr/local/bin/giraffeClient
+-- Installing: /usr/local/bin/basic_component
+-- Installing: /usr/local/bin/opencvdemo
+-- Installing: /usr/local/bin/rgbdCalibrator
+-- Installing: /usr/local/bin/basic_component_qt
+-- Installing: /usr/local/bin/openniServer
+-- Installing: /usr/local/bin/rgbdViewer
+-- Installing: /usr/local/bin/cameraserver
+-- Installing: /usr/local/bin/basic_server
+-- Installing: /usr/local/bin/remoteConfiguration
+-- Installing: /usr/local/bin/cameraview
+-- Installing: /usr/local/bin/replayer
+-- Installing: /usr/local/bin/giraffeServer
+-- Installing: /usr/local/bin/colorTuner
+-- Installing: /usr/local/bin/openni1Server
+-- Installing: /usr/local/bin/cameraview_icestorm
+-- Installing: /usr/local/bin/rgbdManualCalibrator
+-- Installing: /usr/local/bin/pclRGBDServer
+-- Installing: /usr/local/include/jderobot/slice/bodyencoders.ice
+-- Installing: /usr/local/include/jderobot/slice/genericData.ice
+-- Installing: /usr/local/include/jderobot/slice/jcm.ice
+-- Installing: /usr/local/include/jderobot/slice/pose3d.ice
+-- Installing: /usr/local/include/jderobot/slice/body.ice
+-- Installing: /usr/local/include/jderobot/slice/wiimote.ice
+-- Installing: /usr/local/include/jderobot/slice/sonars.ice
+-- Installing: /usr/local/include/jderobot/slice/containers.ice
+-- Installing: /usr/local/include/jderobot/slice/bodymotors.ice
+-- Installing: /usr/local/include/jderobot/slice/kinectleds.ice
+-- Installing: /usr/local/include/jderobot/slice/jointmotor.ice
+-- Installing: /usr/local/include/jderobot/slice/naomotions.ice
+-- Installing: /usr/local/include/jderobot/slice/laser.ice
+-- Installing: /usr/local/include/jderobot/slice/image.ice
+-- Installing: /usr/local/include/jderobot/slice/naofollowball.ice
+-- Installing: /usr/local/include/jderobot/slice/varcolor.ice
+-- Installing: /usr/local/include/jderobot/slice/ptencoders.ice
+-- Installing: /usr/local/include/jderobot/slice/common.ice
+-- Installing: /usr/local/include/jderobot/slice/recorder.ice
+-- Installing: /usr/local/include/jderobot/slice/pose3dencoders.ice
+-- Installing: /usr/local/include/jderobot/slice/pose3dmotors.ice
+-- Installing: /usr/local/include/jderobot/slice/replayControl.ice
+-- Installing: /usr/local/include/jderobot/slice/bodymovements.ice
+-- Installing: /usr/local/include/jderobot/slice/namingService.ice
+-- Installing: /usr/local/include/jderobot/slice/exceptions.ice
+-- Installing: /usr/local/include/jderobot/slice/motors.ice
+-- Installing: /usr/local/include/jderobot/slice/pointcloud.ice
+-- Installing: /usr/local/include/jderobot/slice/remoteCloud.ice
+-- Installing: /usr/local/include/jderobot/slice/datetime.ice
+-- Installing: /usr/local/include/jderobot/slice/ptmotors.ice
+-- Installing: /usr/local/include/jderobot/slice/camera.ice
+-- Installing: /usr/local/include/jderobot/slice/remoteConfig.ice
+-- Installing: /usr/local/include/jderobot/slice/encoders.ice
+-- Installing: /usr/local/share/jderobot/conf/icestorm.cfg
+-- Installing: /usr/local/share/jderobot/conf/icebox.cfg
+-- Installing: /usr/local/share/jderobot/conf/introrob_qt.cfg
+-- Installing: /usr/local/share/jderobot/conf/namingService.cfg
+-- Installing: /usr/local/share/jderobot/conf/replayController.cfg
+-- Installing: /usr/local/share/jderobot/conf/config.cfg
+-- Installing: /usr/local/share/jderobot/conf/kinect.cfg
+-- Installing: /usr/local/share/jderobot/conf/profundidad.cfg
+-- Installing: /usr/local/share/jderobot/conf/pioneer2dx2Motors.cfg
+-- Installing: /usr/local/share/jderobot/conf/pioneer2dx2Encoders.cfg
+-- Installing: /usr/local/share/jderobot/conf/pioneer2dxEncoders.cfg
+-- Installing: /usr/local/share/jderobot/conf/pioneer2dxMotors.cfg
+-- Installing: /usr/local/share/jderobot/conf/pioneer2dx2_pose3dencoders.cfg
+-- Installing: /usr/local/share/jderobot/conf/pioneer2dx_laser.cfg
+-- Installing: /usr/local/share/jderobot/conf/cam_sensor_left.cfg
+-- Installing: /usr/local/share/jderobot/conf/pioneer2dx2_laser.cfg
+-- Installing: /usr/local/share/jderobot/conf/pioneer2dx_cam_sensor_right.cfg
+-- Installing: /usr/local/share/jderobot/conf/pioneer2dx_pose3dencoders.cfg
+-- Installing: /usr/local/share/jderobot/conf/pioneer2dx_cam_sensor_left.cfg
+-- Installing: /usr/local/share/jderobot/conf/cam_sensor_right.cfg
+-- Installing: /usr/local/share/jderobot/conf/poserightelbow.cfg
+-- Installing: /usr/local/share/jderobot/conf/poserighthip.cfg
+-- Installing: /usr/local/share/jderobot/conf/poseleftankle.cfg
+-- Installing: /usr/local/share/jderobot/conf/poserightankle.cfg
+-- Installing: /usr/local/share/jderobot/conf/poselefthip.cfg
+-- Installing: /usr/local/share/jderobot/conf/ballgreen.cfg
+-- Installing: /usr/local/share/jderobot/conf/cam_sensor_bottom.cfg
+-- Installing: /usr/local/share/jderobot/conf/poseneck.cfg
+-- Installing: /usr/local/share/jderobot/conf/poseleftknee.cfg
+-- Installing: /usr/local/share/jderobot/conf/poserightknee.cfg
+-- Installing: /usr/local/share/jderobot/conf/poseleftelbow.cfg
+-- Installing: /usr/local/share/jderobot/conf/poseneckspeed.cfg
+-- Installing: /usr/local/share/jderobot/conf/ballred.cfg
+-- Installing: /usr/local/share/jderobot/conf/cam_sensor_top.cfg
+-- Installing: /usr/local/share/jderobot/conf/poserightshoulder.cfg
+-- Installing: /usr/local/share/jderobot/conf/poseleftshoulder.cfg
+-- Installing: /usr/local/share/jderobot/conf/introrob.cfg
+-- Installing: /usr/local/share/jderobot/conf/introrobOld.cfg
+-- Installing: /usr/local/share/jderobot/conf/robot1introrob.cfg
+-- Installing: /usr/local/share/jderobot/conf/robot2introrob.cfg
+-- Installing: /usr/local/share/jderobot/conf/recorder.cfg
+-- Installing: /usr/local/share/jderobot/conf/giraffeClient.cfg
+-- Installing: /usr/local/share/jderobot/conf/basic_component.cfg
+-- Installing: /usr/local/share/jderobot/conf/opencvdemo.cfg
+-- Installing: /usr/local/share/jderobot/conf/rgbdCalibrator.cfg
+-- Installing: /usr/local/share/jderobot/conf/basic_component_qt.cfg
+-- Installing: /usr/local/share/jderobot/conf/lambecom.cfg
+-- Installing: /usr/local/share/jderobot/conf/1openniServer.cfg
+-- Installing: /usr/local/share/jderobot/conf/2openniServer.cfg
+-- Installing: /usr/local/share/jderobot/conf/openniServer.cfg
+-- Installing: /usr/local/share/jderobot/conf/teleoperatorPC.cfg
+-- Installing: /usr/local/share/jderobot/conf/camera-0.cfg
+-- Up-to-date: /usr/local/share/jderobot/conf/lambecom.cfg
+-- Installing: /usr/local/share/jderobot/conf/rgbdViewer.cfg
+-- Installing: /usr/local/share/jderobot/conf/cameraserver.cfg
+-- Installing: /usr/local/share/jderobot/conf/followball.cfg
+-- Installing: /usr/local/share/jderobot/conf/naooperator.cfg
+-- Installing: /usr/local/share/jderobot/conf/basic_server.cfg
+-- Installing: /usr/local/share/jderobot/conf/remoteConfiguration.cfg
+-- Installing: /usr/local/share/jderobot/conf/cameraview.cfg
+-- Installing: /usr/local/share/jderobot/conf/pioneer_left_cam.cfg
+-- Installing: /usr/local/share/jderobot/conf/replayer.cfg
+-- Installing: /usr/local/share/jderobot/conf/giraffeServer.cfg
+-- Installing: /usr/local/share/jderobot/conf/colorTuner.cfg
+-- Installing: /usr/local/share/jderobot/conf/openni1Server.cfg
+-- Installing: /usr/local/share/jderobot/conf/cameraview_icestorm.cfg
+-- Installing: /usr/local/share/jderobot/conf/rgbdManualCalibrator.cfg
+-- Installing: /usr/local/share/jderobot/conf/cam1-mia.cfg
+-- Installing: /usr/local/share/jderobot/conf/kinectServer.cfg
+-- Installing: /usr/local/share/jderobot/glade/replayControllerGui.glade
+-- Installing: /usr/local/share/jderobot/glade/introrob.glade
+-- Installing: /usr/local/share/jderobot/glade/recordergui.glade
+-- Installing: /usr/local/share/jderobot/glade/giraffeClient.glade
+-- Installing: /usr/local/share/jderobot/glade/basic_component.glade
+-- Installing: /usr/local/share/jderobot/glade/opencvdemo.glade
+-- Installing: /usr/local/share/jderobot/glade/rgbdCalibrator.glade
+-- Installing: /usr/local/share/jderobot/glade/TeleoperatorPC.glade
+-- Installing: /usr/local/share/jderobot/glade/rgbdViewergui.glade
+-- Installing: /usr/local/share/jderobot/glade/cameraview.glade
+-- Installing: /usr/local/share/jderobot/glade/main_gui.glade
+-- Up-to-date: /usr/local/share/jderobot/glade/cameraview.glade
+-- Installing: /usr/local/share/jderobot/glade/replayergui.glade
+-- Up-to-date: /usr/local/share/jderobot/glade/main_gui.glade
+-- Installing: /usr/local/share/jderobot/glade/name.glade
+-- Installing: /usr/local/share/jderobot/glade/timing.glade
+-- Installing: /usr/local/share/jderobot/glade/code.glade
+-- Installing: /usr/local/share/jderobot/glade/save.glade
+-- Installing: /usr/local/share/jderobot/glade/additional_libraries.glade
+-- Installing: /usr/local/share/jderobot/glade/edittransition.glade
+-- Installing: /usr/local/share/jderobot/glade/funvar.glade
+-- Installing: /usr/local/share/jderobot/glade/import.glade
+-- Installing: /usr/local/share/jderobot/glade/edittransitioncode.glade
+-- Installing: /usr/local/share/jderobot/glade/open.glade
+-- Installing: /usr/local/share/jderobot/glade/configfile.glade
+-- Up-to-date: /usr/local/share/jderobot/glade/cameraview.glade
+-- Installing: /usr/local/share/jderobot/glade/rgbdManualCalibrator.glade
+-- Installing: /usr/local/share/jderobot/gazebo/gazebo-setup.sh
+-- Installing: /usr/local/share/jderobot/gazebo//models
+-- Installing: /usr/local/share/jderobot/gazebo//models/blocks
+-- Installing: /usr/local/share/jderobot/gazebo//models/blocks/images
+-- Installing: /usr/local/share/jderobot/gazebo//models/blocks/images/Material2noCulling.jpg
+-- Installing: /usr/local/share/jderobot/gazebo//models/blocks/model-1_3.sdf
+-- Installing: /usr/local/share/jderobot/gazebo//models/blocks/models
+-- Installing: /usr/local/share/jderobot/gazebo//models/blocks/models/blocks.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/blocks/models/blocks2.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/blocks/model.config
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dx
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dx/model.sdf
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dx/manifest.xml
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dx/materials
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dx/materials/textures
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dx/materials/textures/plate_1_logo.tga
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dx/materials/textures/68-04552-1000-RA_Turtlebot_M-F_Standoff_color.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dx/materials/textures/68-02421-8000-RA_Turtlebot_F-F_Standoff_color.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dx/materials/textures/68-04552-2000-RA_Turtlebot_M-F_Standoff_color.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dx/materials/textures/create_body.tga
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dx/materials/textures/plate_2_logo.tga
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dx/materials/textures/plate_0_logo.tga
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dx/model-1_3.sdf
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dx/meshes
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dx/meshes/chassis.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dx/meshes/wheel.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dx/model.config
+-- Installing: /usr/local/share/jderobot/gazebo//models/circuitoMontmelo
+-- Installing: /usr/local/share/jderobot/gazebo//models/circuitoMontmelo/model.sdf
+-- Installing: /usr/local/share/jderobot/gazebo//models/circuitoMontmelo/materials
+-- Installing: /usr/local/share/jderobot/gazebo//models/circuitoMontmelo/materials/textures
+-- Installing: /usr/local/share/jderobot/gazebo//models/circuitoMontmelo/materials/textures/tarmac.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/circuitoMontmelo/materials/scripts
+-- Installing: /usr/local/share/jderobot/gazebo//models/circuitoMontmelo/materials/scripts/asphalt.material
+-- Installing: /usr/local/share/jderobot/gazebo//models/circuitoMontmelo/model.config
+-- Installing: /usr/local/share/jderobot/gazebo//models/mapaSimple
+-- Installing: /usr/local/share/jderobot/gazebo//models/mapaSimple/model.sdf
+-- Installing: /usr/local/share/jderobot/gazebo//models/mapaSimple/manifest.xml
+-- Installing: /usr/local/share/jderobot/gazebo//models/mapaSimple/meshes
+-- Installing: /usr/local/share/jderobot/gazebo//models/mapaSimple/meshes/mapa.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/mapaSimple/meshes/pared.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dxJde
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dxJde/model.sdf
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dxJde/materials
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dxJde/materials/textures
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dxJde/materials/textures/plate_1_logo.tga
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dxJde/materials/textures/68-04552-1000-RA_Turtlebot_M-F_Standoff_color.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dxJde/materials/textures/68-02421-8000-RA_Turtlebot_F-F_Standoff_color.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dxJde/materials/textures/68-04552-2000-RA_Turtlebot_M-F_Standoff_color.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dxJde/materials/textures/create_body.tga
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dxJde/materials/textures/plate_2_logo.tga
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dxJde/materials/textures/plate_0_logo.tga
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dxJde/meshes
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dxJde/meshes/chassis.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dxJde/meshes/sonyvid30
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dxJde/meshes/sonyvid30/sonyvid30_mid.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dxJde/meshes/sonyvid30/sonyvid30_bottom.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dxJde/meshes/sonyvid30/sonyvid30_top.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dxJde/meshes/wheel.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/pioneer2dxJde/model.config
+-- Installing: /usr/local/share/jderobot/gazebo//models/departamental
+-- Installing: /usr/local/share/jderobot/gazebo//models/departamental/images
+-- Installing: /usr/local/share/jderobot/gazebo//models/departamental/images/departamental2.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/departamental/model-1_3.sdf
+-- Installing: /usr/local/share/jderobot/gazebo//models/departamental/model.config
+-- Installing: /usr/local/share/jderobot/gazebo//models/kinect
+-- Installing: /usr/local/share/jderobot/gazebo//models/kinect/model.sdf
+-- Installing: /usr/local/share/jderobot/gazebo//models/kinect/manifest.xml
+-- Installing: /usr/local/share/jderobot/gazebo//models/kinect/materials
+-- Installing: /usr/local/share/jderobot/gazebo//models/kinect/materials/textures
+-- Installing: /usr/local/share/jderobot/gazebo//models/kinect/materials/textures/kinect.tga
+-- Installing: /usr/local/share/jderobot/gazebo//models/kinect/model-1_3.sdf
+-- Installing: /usr/local/share/jderobot/gazebo//models/kinect/meshes
+-- Installing: /usr/local/share/jderobot/gazebo//models/kinect/meshes/kinect.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/simpleWorld
+-- Installing: /usr/local/share/jderobot/gazebo//models/simpleWorld/model-1.3.sdf
+-- Installing: /usr/local/share/jderobot/gazebo//models/simpleWorld/model.config
+-- Installing: /usr/local/share/jderobot/gazebo//models/ground_plane_sincolor
+-- Installing: /usr/local/share/jderobot/gazebo//models/ground_plane_sincolor/model.sdf
+-- Installing: /usr/local/share/jderobot/gazebo//models/ground_plane_sincolor/manifest.xml
+-- Installing: /usr/local/share/jderobot/gazebo//models/ground_plane_sincolor/model-1_3.sdf
+-- Installing: /usr/local/share/jderobot/gazebo//models/ground_plane_sincolor/model.config
+-- Installing: /usr/local/share/jderobot/gazebo//models/hokuyo
+-- Installing: /usr/local/share/jderobot/gazebo//models/hokuyo/model.sdf
+-- Installing: /usr/local/share/jderobot/gazebo//models/hokuyo/manifest.xml
+-- Installing: /usr/local/share/jderobot/gazebo//models/hokuyo/model-1_3.sdf
+-- Installing: /usr/local/share/jderobot/gazebo//models/hokuyo/meshes
+-- Installing: /usr/local/share/jderobot/gazebo//models/hokuyo/meshes/hokuyo_convex.stl
+-- Installing: /usr/local/share/jderobot/gazebo//models/hokuyo/meshes/hokuyo.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/hokuyo/meshes/CMakeLists.txt
+-- Installing: /usr/local/share/jderobot/gazebo//models/hokuyo/model.config
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/model-1_3.sdf
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture0.jpg
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture13.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture14.png.002.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture11.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture0.png.001.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture7.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture12.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture2.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/characters2.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture0.png.003.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture14.png.001.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture4.png.001.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture0.png.005.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture14.png.003.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture9.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture0.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture0.png.004.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture8.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture1.jpg
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture10.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/characters.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture2.png.002.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture12.png.001.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture0.png.002.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture3.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture4.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture5.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture6.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture2.png.001.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture15.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture1.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/models/texture14.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/charactersMario/model.config
+-- Installing: /usr/local/share/jderobot/gazebo//models/paredesMontmelo
+-- Installing: /usr/local/share/jderobot/gazebo//models/paredesMontmelo/paredesMontmelo.sdf
+-- Installing: /usr/local/share/jderobot/gazebo//models/paredesMontmelo/model.config
+-- Installing: /usr/local/share/jderobot/gazebo//models/sun
+-- Installing: /usr/local/share/jderobot/gazebo//models/sun/model.sdf
+-- Installing: /usr/local/share/jderobot/gazebo//models/sun/manifest.xml
+-- Installing: /usr/local/share/jderobot/gazebo//models/sun/model-1_3.sdf
+-- Installing: /usr/local/share/jderobot/gazebo//models/sun/model.config
+-- Installing: /usr/local/share/jderobot/gazebo//models/jarama
+-- Installing: /usr/local/share/jderobot/gazebo//models/jarama/images
+-- Installing: /usr/local/share/jderobot/gazebo//models/jarama/images/jaramaCircuitoRetocado.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/jarama/model-1_3.sdf
+-- Installing: /usr/local/share/jderobot/gazebo//models/jarama/model.config
+-- Installing: /usr/local/share/jderobot/gazebo//models/duck
+-- Installing: /usr/local/share/jderobot/gazebo//models/duck/model.sdf
+-- Installing: /usr/local/share/jderobot/gazebo//models/duck/model-1_3.sdf
+-- Installing: /usr/local/share/jderobot/gazebo//models/duck/meshes
+-- Installing: /usr/local/share/jderobot/gazebo//models/duck/meshes/duck.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/duck/meshes/duck2.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/duck/meshes/duck.png
+-- Installing: /usr/local/share/jderobot/gazebo//models/duck/model.config
+-- Installing: /usr/local/share/jderobot/gazebo//models/cereales
+-- Installing: /usr/local/share/jderobot/gazebo//models/cereales/model-1_3.sdf
+-- Installing: /usr/local/share/jderobot/gazebo//models/cereales/meshes
+-- Installing: /usr/local/share/jderobot/gazebo//models/cereales/meshes/texture0.jpg
+-- Installing: /usr/local/share/jderobot/gazebo//models/cereales/meshes/cereales.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/cereales/meshes/texture1.jpg
+-- Installing: /usr/local/share/jderobot/gazebo//models/cereales/meshes/cereales2.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/cereales/model.config
+-- Installing: /usr/local/share/jderobot/gazebo//models/nao
+-- Installing: /usr/local/share/jderobot/gazebo//models/nao/model.sdf
+-- Installing: /usr/local/share/jderobot/gazebo//models/nao/meshes
+-- Installing: /usr/local/share/jderobot/gazebo//models/nao/meshes/antebrazoizquierdo.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/nao/meshes/cabeza.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/nao/meshes/antebrazoderecho.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/nao/meshes/piederecho.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/nao/meshes/bicepsderecho.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/nao/meshes/espinillaizquierda.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/nao/meshes/cuerpo.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/nao/meshes/espinilladerecha.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/nao/meshes/pieizquierdo.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/nao/meshes/musloizquierdo.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/nao/meshes/bicepsizquierdo.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/nao/meshes/musloderecho.dae
+-- Installing: /usr/local/share/jderobot/gazebo//models/nao/model.config
+-- Installing: /usr/local/share/jderobot/gazebo//worlds
+-- Installing: /usr/local/share/jderobot/gazebo//worlds/montmelo-kobuki.world
+-- Installing: /usr/local/share/jderobot/gazebo//worlds/kinect.world
+-- Installing: /usr/local/share/jderobot/gazebo//worlds/pioneer2dxJde-2.world
+-- Installing: /usr/local/share/jderobot/gazebo//worlds/jaramaSigueLineas.world
+-- Installing: /usr/local/share/jderobot/gazebo//worlds/reconstruccion3D.world
+-- Installing: /usr/local/share/jderobot/gazebo//worlds/departamental2.world
+-- Installing: /usr/local/share/jderobot/gazebo//worlds/naoworld.world
+-- Installing: /usr/local/share/jderobot/gazebo//worlds/pioneer2dxJde.world
+-- Installing: /usr/local/share/jderobot/gazebo//worlds/montmelo-pioneer.world
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/kinect/kinect.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/kinect/profundidad.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/nao/poserightelbow.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/nao/poserighthip.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/nao/poseleftankle.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/nao/poserightankle.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/nao/poselefthip.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/nao/ballgreen.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/nao/cam_sensor_bottom.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/nao/poseneck.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/nao/poseleftknee.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/nao/poserightknee.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/nao/poseleftelbow.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/nao/poseneckspeed.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/nao/ballred.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/nao/cam_sensor_top.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/nao/poserightshoulder.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/nao/poseleftshoulder.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/pioneer/pioneer2dx2Motors.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/pioneer/pioneer2dx2Encoders.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/pioneer/pioneer2dxEncoders.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/pioneer/pioneer2dxMotors.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/pioneer/pioneer2dx2_pose3dencoders.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/pioneer/pioneer2dx_laser.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/pioneer/cam_sensor_left.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/pioneer/pioneer2dx2_laser.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/pioneer/pioneer2dx_cam_sensor_right.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/pioneer/pioneer2dx_pose3dencoders.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/pioneer/pioneer2dx_cam_sensor_left.cfg
+-- Installing: /usr/local/share/jderobot/gazebo/plugins/pioneer/cam_sensor_right.cfg
+-- Installing: /usr/local/share/jderobot/conf/myimage.png
+-- Installing: /usr/local/share/jderobot/conf/cameras/calibB.xml
+-- Installing: /usr/local/share/jderobot/conf/cameras/calibA.xml
+
